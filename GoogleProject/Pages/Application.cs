@@ -5,7 +5,6 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.IE;
 
 namespace GoogleProject.Pages
-
 {
     public class Application
     {
@@ -23,9 +22,9 @@ namespace GoogleProject.Pages
                 case BrowserType.IE:
                     var internetExplorerOptions = new InternetExplorerOptions()
                     {
-                    IntroduceInstabilityByIgnoringProtectedModeSettings = true,
-                    EnsureCleanSession = true,
-                    IgnoreZoomLevel = true
+                        IntroduceInstabilityByIgnoringProtectedModeSettings = true,
+                        EnsureCleanSession = true,
+                        IgnoreZoomLevel = true
                     };
                     Driver = new InternetExplorerDriver(internetExplorerOptions);
                     break;

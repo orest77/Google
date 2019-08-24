@@ -5,7 +5,7 @@ namespace GoogleProject.Pages.Main
 {
     public class MainPage
     {
-        private IWebDriver _driver;
+        protected IWebDriver _driver;
 
         public MainPage(IWebDriver driver)
         {

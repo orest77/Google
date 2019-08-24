@@ -6,11 +6,8 @@ namespace GoogleProject.Pages.SearchPages
 {
     public class SearchPage : MainPage
     {
-        private IWebDriver _driver;
-
         public SearchPage(IWebDriver driver) : base(driver)
         {
-            _driver = driver;
         }
 
         protected IList<IWebElement> LowBarElements => _driver.FindElements(By.XPath("//div[@id='hdtb-msb-vis']/div"));
@@ -20,7 +17,7 @@ namespace GoogleProject.Pages.SearchPages
 
         public List<SearchResult> InitializeListSearchResult(IReadOnlyCollection<IWebElement> elements)
         {
-        List<SearchResult> list = new List<SearchResult>();
+            List<SearchResult> list = new List<SearchResult>();
 
             foreach (var current in elements)
             {
